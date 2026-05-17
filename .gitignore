@@ -1,0 +1,17 @@
+# Environnement Python
+.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ChromaDB (base vectorielle locale, trop lourde pour GitHub)
+chroma_db/
+
+# Données Spider (dataset volumineux)
+data/spider/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
