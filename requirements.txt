@@ -1,0 +1,44 @@
+# ============================================================
+# NL2SQL-Local — requirements.txt
+# Stack 100% locale et gratuite
+# ============================================================
+
+# LLM & Orchestration (local via Ollama)
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-ollama>=0.2.0       # connecteur natif Ollama <-> LangChain
+langchain-core>=0.3.0
+langgraph>=0.2.0              # boucle self-correction (graphe d'états)
+
+# Embeddings locaux — aucune clé API requise
+sentence-transformers>=2.7.0  # modèle all-MiniLM-L6-v2 (90 Mo, CPU)
+torch>=2.0.0                  # backend CPU uniquement
+
+# Vector Store local
+chromadb>=0.5.0
+langchain-chroma>=0.1.4
+
+# Bases de données
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0        # driver PostgreSQL
+# sqlite3 inclus dans Python standard
+
+# Validation SQL
+sqlparse>=0.5.0
+
+# Interface & Visualisation
+streamlit>=1.38.0
+plotly>=5.24.0
+pandas>=2.2.0
+
+# Monitoring local (remplace LangSmith payant)
+langfuse>=2.0.0
+
+# Tests & Évaluation
+pytest>=8.0.0
+pytest-asyncio>=0.24.0
+datasets>=3.0.0               # Spider dataset
+
+# Utilitaires
+python-dotenv>=1.0.0
+pydantic>=2.9.0
